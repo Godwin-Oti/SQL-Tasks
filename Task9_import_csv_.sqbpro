@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/godwi/OneDrive/Desktop/SQL Project/DAY_9_From_CSV.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="1771"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,20:maincran_logs_2015_01_01"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="ADDRESS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="105"/><column index="2" value="155"/><column index="3" value="172"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Affiliated_With" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="117"/><column index="2" value="142"/><column index="3" value="200"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Appointment" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="7" mode="1"/></sort><column_widths><column index="1" value="175"/><column index="2" value="189"/><column index="3" value="188"/><column index="4" value="244"/><column index="5" value="221"/><column index="6" value="210"/><column index="7" value="258"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Block" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Department" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="167"/><column index="2" value="160"/><column index="3" value="73"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Manufacturers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="44"/><column index="2" value="67"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Medication" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="71"/><column index="2" value="114"/><column index="3" value="208"/><column index="4" value="136"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Nurse" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="96"/><column index="2" value="193"/><column index="3" value="187"/><column index="4" value="197"/><column index="5" value="208"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="On_Call" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="229"/><column index="2" value="224"/><column index="3" value="228"/><column index="4" value="352"/><column index="5" value="282"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="PEOPLE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="128"/><column index="2" value="117"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Patient" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="271"/><column index="2" value="233"/><column index="3" value="270"/><column index="4" value="228"/><column index="5" value="215"/><column index="6" value="158"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Physician" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="235"/><column index="2" value="279"/><column index="3" value="302"/><column index="4" value="194"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Prescribes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="214"/><column index="2" value="238"/><column index="3" value="280"/><column index="4" value="268"/><column index="5" value="214"/><column index="6" value="154"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Procedures" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="318"/><column index="3" value="183"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Room" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="70"/><column index="2" value="61"/><column index="3" value="85"/><column index="4" value="86"/><column index="5" value="94"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Stay" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="65"/><column index="2" value="70"/><column index="3" value="57"/><column index="4" value="73"/><column index="5" value="73"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Trained_In" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="81"/><column index="2" value="89"/><column index="3" value="131"/><column index="4" value="146"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Undergoes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="269"/><column index="2" value="261"/><column index="3" value="61"/><column index="4" value="73"/><column index="5" value="81"/><column index="6" value="117"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cran_logs_2015_01_01" show_row_id="0" encoding="UTF-8" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="152"/><column index="2" value="144"/><column index="3" value="100"/><column index="4" value="154"/><column index="5" value="193"/><column index="6" value="242"/><column index="7" value="275"/><column index="8" value="141"/><column index="9" value="161"/><column index="10" value="182"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats><column index="1" value=""/></display_formats><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column10" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column15" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column18" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column1h83" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column2" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column5" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column6" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_column7" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columnpp" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columnpt" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntO" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="89"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntpO" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="78"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntr" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="175"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrp" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpll" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpn" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpoo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpook" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpookg" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="replaced_columntrpookgj" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="196"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="temp_tablekit" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="123"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="temp_tablekit2" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="78"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE &quot;cran_logs_2015_01_01&quot; (
+	&quot;download_date&quot;	DATE,
+	&quot;time&quot;	TIME,
+	&quot;size&quot;	INTEGER,
+	&quot;r_version&quot;	TEXT,
+	&quot;r_arch&quot;	TEXT,
+	&quot;r_os&quot;	TEXT,
+	&quot;package&quot;	TEXT,
+	&quot;version&quot;	TEXT,
+	&quot;country&quot;	TEXT,
+	&quot;ip_id&quot;	INTEGER
+);
+
+UPDATE cran_logs_2015_01_01
+SET download_date = REPLACE(download_date, '&quot;', ''); -- Updating to remove the quotation mark infront of the First COLUMN
+
+UPDATE cran_logs_2015_01_01
+SET ip_id = REPLACE(ip_id, '&quot;', '');  -- -- Updating to remove the quotation mark infront of the Last COLUMN
+
+
+--Questions
+-- 9.1 Give the package name and how many times they're downloaded. Order by the 2nd column descending.
+SELECT package AS [Package Name], COUNT(package) AS [Numer Of Download]
+FROM  cran_logs_2015_01_01
+GROUP BY package
+ORDER BY time DESC;
+
+-- 9.2 Give the package ranking (based on how many times it was downloaded) during 9AM to 11AM
+SELECT package AS [Package Name], COUNT(package) AS [Number Of Downloads], RANK() OVER(ORDER BY COUNT(package)DESC) AS [Package Ranking] 
+FROM cran_logs_2015_01_01
+WHERE time LIKE '09%' OR time LIKE '10%' -- Getting Data Between 9AM and 11 AM
+GROUP BY package
+ORDER BY COUNT(package) DESC; -- Ordering by the count of downloads to get the ranking
+
+
+-- 9.3 How many records (downloads) are from China (&quot;CN&quot;) or Japan(&quot;JP&quot;) or Singapore (&quot;SG&quot;)?
+SELECT country AS [Country Name], COUNT(package) AS [Number Of Downloads] 
+FROM cran_logs_2015_01_01
+WHERE country IN(&quot;CN&quot;,&quot;JP&quot;,&quot;SG&quot;)  -- Getting the number of download where is China, Japan Or Singapore
+GROUP BY [Country Name]; -- Groupping by with country to get the number of each country's download
+
+
+-- 9.4 Print the countries whose downloads are more than the downloads from China (&quot;CN&quot;)
+SELECT country AS [Country Name], COUNT(package) AS [Number Of Downloads] 
+FROM cran_logs_2015_01_01
+GROUP BY [Country Name] 
+HAVING COUNT(package)&gt;(SELECT  COUNT(package) AS [Number Of Downloads China] -- A subquery to get the Number of download from China
+                       FROM cran_logs_2015_01_01
+                       WHERE country =&quot;CN&quot;);	
+  
+				 
+-- 9.5 Print the average length of the package name of all the UNIQUE packages
+SELECT ROUND(AVG(package_length),2) AS average_package_length
+FROM (
+    SELECT DISTINCT package, LENGTH(package) AS package_length
+    FROM cran_logs_2015_01_01
+) AS unique_packages;
+
+
+
+
+--Alertnatively
+
+WITH lonelies AS (SELECT package
+
+FROM cran_logs_2015_01_01
+
+GROUP BY package
+
+HAVING COUNT(package) = 1)
+
+
+
+SELECT package AS package_name, LENGTH(package) AS name_length, 
+
+(SELECT ROUND(AVG(LENGTH(package)), 2) FROM lonelies) AS 'Average # of characters in unique packages'
+
+FROM lonelies;
+
+
+
+
+
+-- 9.6 Get the package whose download count ranks 2nd (print package name and its download count).
+SELECT [Package Name],[Number Of Downloads],[Package Ranking]
+FROM (
+      SELECT package AS [Package Name],      --- A subquery that creates table with the entire Packages, Number of download and Ranking
+            COUNT(package) AS [Number Of Downloads], 
+			RANK() OVER(ORDER BY COUNT(package)DESC) AS [Package Ranking] 
+      FROM cran_logs_2015_01_01
+      GROUP BY package
+	  )
+WHERE [Package Ranking]=2
+ORDER BY [Number Of Downloads]DESC; -- Ordering by the count of downloads to get the ranking
+
+-- 9.7 Print the name of the package whose download count is bigger than 1000.
+SELECT package AS [Package Name],COUNT(package) AS [Number Of Downloads]
+FROM cran_logs_2015_01_01
+GROUP BY package
+HAVING COUNT(package) &gt;1000;
+
+-- 9.8 The field &quot;r_os&quot; is the operating system of the users.
+    -- 	Here we would like to know what main system we have (ignore version number), the relevant counts, and the proportion (in percentage).
+CREATE TEMPORARY TABLE r_os_without_version AS  -- Creating a Temporary Table that returned  column r_os while ignoring the version
+SELECT 
+    CASE 
+        WHEN r_os = 'linux-gnu' THEN 'linux'
+        WHEN r_os = 'linux-gnueabihf' THEN 'linux'
+        WHEN r_os LIKE 'darwin%' THEN 'darwin'
+        WHEN r_os = 'mingw32' THEN 'mingw'
+        ELSE r_os
+    END AS r_os2
+FROM cran_logs_2015_01_01;
+
+
+
+SELECT [User Operating System],[Operating System Count], ROUND(([Operating System Count]*100.00/SUM([Operating System Count])OVER()),2) AS Percentage
+FROM(
+    SELECT r_os2 AS [User Operating System], 
+	      COUNT(r_os2) AS [Operating System Count]
+    FROM r_os_without_version 
+GROUP BY [User Operating System]) -- --- A subquery that creates table of the User Operation System &quot;r_os&quot;             
+ORDER BY [Operating System Count] DESC;
+
+
+------ Alternatively (IN ONE QUERY) using a CTE----------
+
+WITH r_os_without_version AS (
+    SELECT 
+        CASE 
+            WHEN r_os = 'linux-gnu' THEN 'linux'
+            WHEN r_os = 'linux-gnueabihf' THEN 'linux'
+            WHEN r_os LIKE 'darwin%' THEN 'darwin'
+            WHEN r_os = 'mingw32' THEN 'mingw'
+            ELSE r_os
+        END AS r_os2
+    FROM cran_logs_2015_01_01
+)
+
+SELECT 
+    [User Operating System], 
+    [Operating System Count], 
+    ROUND(([Operating System Count] * 100.00 / SUM([Operating System Count]) OVER()), 2) AS Percentage
+FROM (
+    SELECT 
+        r_os2 AS [User Operating System], 
+        COUNT(r_os2) AS [Operating System Count]
+    FROM r_os_without_version 
+    GROUP BY [User Operating System]
+) AS counts
+ORDER BY [Operating System Count] DESC;
+
+
+
+
+
+
+
+
+-- Using Regular Expression
+--Regex 
+WITH op_sys AS
+(SELECT
+CASE WHEN r_os LIKE 'linux%' THEN regex_replace('^linux.*$', r_os, 'linux')
+ELSE regex_replace('[.0-9]+', r_os, '')
+END AS base_os
+FROM cran_logs_2015_01_01)
+
+SELECT 
+base_os,
+COUNT(base_os) AS 'Count', 
+ROUND((COUNT(base_os) * 100.0 / (SELECT COUNT(base_os) FROM op_sys)),2) AS 'percentage' --important to multiply by 100.0 as multiplying by 100 makes all results INT.
+FROM op_sys
+GROUP BY base_os
+ORDER BY COUNT(base_os) DESC;
+
+
+
+
+
+--- Creating TEMPORARY TABLE
+CREATE TEMPORARY TABLE replaced_columntr AS 
+SELECT regex_replace('[.0-9]+', r_os, '') AS replaced_column
+FROM cran_logs_2015_01_01;
+
+CREATE TEMPORARY TABLE replaced_columntpO AS 
+SELECT
+CASE
+     WHEN replaced_column LIKE 'linux%' THEN 'linux'
+        ELSE replaced_column
+    END AS r_os2
+FROM replaced_columntr
+		
+
+
+
+
+
+
+
+
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

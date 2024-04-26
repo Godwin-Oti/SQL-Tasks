@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/godwi/OneDrive/Desktop/SQL Project/Sub_query_exercise.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="1898"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/><expanded_item id="4" parent="1"/></tab_structure><tab_browse><current_table name="4,11:mainDepartments"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Departments" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="167"/><column index="2" value="200"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="EmployeeDepartmentDetails" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="144"/><column index="2" value="177"/><column index="3" value="85"/><column index="4" value="200"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="144"/><column index="2" value="177"/><column index="3" value="85"/><column index="4" value="167"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE Departments (
+
+    DepartmentID int,
+
+    DepartmentName varchar(255),
+
+	PRIMARY KEY (DepartmentID)
+
+    
+
+);
+
+
+
+CREATE TABLE Employees (
+
+    EmployeeID int,
+
+    EmployeeName varchar(255),
+
+	Salary int,
+
+    DepartmentID varchar(255),
+
+	PRIMARY KEY (EmployeeID),
+
+    FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+
+);
+
+
+
+INSERT INTO Departments (DepartmentID, DepartmentName) VALUES
+
+(101, 'HR'),
+
+(102, 'IT'),
+
+(103, 'Marketing'),
+
+(104, 'Finance');
+
+
+
+INSERT INTO Employees (EmployeeID, EmployeeName, Salary, DepartmentID) VALUES
+
+(1, 'Alice', 73303, 101),
+
+(2, 'Bob', 62906, 102),
+
+(3, 'Charlie', 85780, 103),
+
+(4, 'David', 69303, 103),
+
+(5, 'Emelie', 79026, 104),
+
+(6, 'Firna', 50365, 103),
+
+(7, 'Gafoor', 94150, 102),
+
+(8, 'Helga', 93788, 102),
+
+(9, 'Ibrahim', 72451, 103),
+
+(10, 'Jacob', 66242, 104),
+
+(11, 'Killian', 93286, 101);
+
+
+----------------------------------------------------- SINGLE-ROW SUBQUERY-----------------------------
+-- Find the name of the employees who work in the department with the lowest DepartmentID.
+SELECT EmployeeName
+FROM Employees
+WHERE DepartmentID =(SELECT MIN(DepartmentID) FROM Departments);
+
+--------------------------------------------------------- MULTIPLE-ROW QUERY-----------------------------------------------
+-- List the names of employees who work in departments that have 'HR' or 'IT' as part of their department names.
+
+SELECT EmployeeName
+FROM Employees
+WHERE DepartmentID IN (SELECT DepartmentID 
+FROM Departments 
+WHERE DepartmentName 
+LIKE '%HR%' 
+OR 
+DepartmentName LIKE '%IT%');
+
+
+
+
+-- List the names of employees who work in departments with more than two employees.
+
+
+
+SELECT EmployeeName
+
+FROM Employees
+
+WHERE DepartmentID IN (SELECT DepartmentID
+
+FROM Employees
+
+GROUP BY DepartmentID
+
+HAVING count(DepartmentID) &gt; 2 );
+
+
+
+
+
+-------------------------------------------------------CORRELATED SUBQUERY---------------------------------------------------
+
+-- For each employee, find their name and the name of their department.
+
+
+
+SELECT E.EmployeeName, 
+
+(SELECT D.DepartmentName 
+
+FROM Departments D 
+
+WHERE D.DepartmentID = E.DepartmentID) AS DepartmentName
+
+FROM Employees E;
+
+
+
+-- Which department(s) have the fewest employees?
+
+
+
+SELECT D.DepartmentName, COUNT(E.EmployeeID) AS EmployeeCount
+
+FROM Departments D
+
+LEFT JOIN Employees E ON D.DepartmentID = E.DepartmentID
+
+GROUP BY D.DepartmentID
+
+HAVING COUNT(E.EmployeeID) = (
+
+    SELECT MIN(EmployeeCount)
+
+    FROM (
+
+        SELECT COUNT(EmployeeID) AS EmployeeCount
+
+        FROM Employees
+
+        GROUP BY DepartmentID
+
+    ) AS SubQueryFrom
+
+);
+
+
+
+
+
+
+
+--------------------------------------------------VIEWS--------------------------------------------------------------
+
+
+
+--1. A view to list all employees along with their department names:
+
+
+
+CREATE VIEW EmployeeDepartmentDetails AS
+
+SELECT 
+
+    e.EmployeeID, 
+
+    e.EmployeeName, 
+
+    e.Salary, 
+
+    d.DepartmentName
+
+FROM 
+
+    Employees e
+
+JOIN 
+
+    Departments d ON e.DepartmentID = d.DepartmentID;
+
+
+
+	--Alternatively--
+
+CREATE VIEW EmployeeDepartmentDetails1 AS
+
+SELECT e.EmployeeName, d.DepartmentName
+
+FROM Employees, Departments
+
+WHERE  e.DepartmentID = d.DepartmentID;
+
+
+
+	
+
+-- You can use the previously created view  like so:
+
+SELECT * FROM EmployeeDepartmentDetails;
+
+SELECT EmployeeName,Salary FROM EmployeeDepartmentDetails;
+
+
+
+
+
+-- 2. A view to list the average salary in each department:
+
+
+
+CREATE VIEW DepartmentAverageSalary AS
+
+SELECT 
+
+    d.DepartmentName, 
+
+    AVG(e.Salary) AS AverageSalary
+
+FROM 
+
+    Employees e
+
+JOIN 
+
+    Departments d ON e.DepartmentID = d.DepartmentID
+
+GROUP BY 
+
+    d.DepartmentName;
+
+
+
+--- Alternatively ------
+
+CREATE VIEW DepartmentAverageSalary AS
+
+SELECT D.DepartmentName, AVG(E.Salary) AS Average_Salary
+
+FROM Departments D, Employees E 
+
+WHERE D.DepartmentID = E.DepartmentID
+
+GROUP BY D.DepartmentName;	
+
+
+
+-- You can use the previously created view  like so:
+
+SELECT * FROM DepartmentAverageSalary;
+
+
+
+
+
+-------------------------------COMMON TABLE EXPRESSION (CTE)-----------------------------------
+
+--  1. A CTE to find employees with salaries above a certain threshold (e.g., 80000):
+
+WITH Employeewithhighsalary AS(
+
+     SELECT EmployeeName, Salary
+
+     FROM Employees
+
+     WHERE Salary &gt; 80000
+
+)
+
+SELECT * FROM Employeewithhighsalary;
+
+
+
+--- Alternatively ------
+
+
+
+WITH HighSalaryEmployees AS (
+
+    SELECT  
+
+        EmployeeName, 
+
+        Salary, 
+
+        DepartmentID
+
+    FROM 
+
+        Employees
+
+    WHERE 
+
+        Salary &amp;gt; 80000
+
+)
+
+SELECT * FROM HighSalaryEmployees;
+
+
+
+-- 2. A CTE to list employees who earn more than the average salary in their department:
+
+WITH Deptaveragesalary AS (
+
+     SELECT DepartmentID, AVG(E.Salary) AS Average_Salary
+
+	 FROM Employees E 
+
+	 GROUP BY DepartmentID	 
+
+)
+
+SELECT E.EmployeeName, D.DepartmentName, E.Salary
+
+FROM Employees E
+
+JOIN   Deptaveragesalary DAS
+
+ON E.DepartmentID = DAS.DepartmentID
+
+JOIN Departments D
+
+ON E.DepartmentID = D.DepartmentID
+
+WHERE E.Salary &gt;Average_Salary;
+
+
+
+
+
+
+
+------------------ TEMPORARY TABLE--------------------------------------------
+
+--  1. Creating and using a temporary table to store details of employees in the 'IT' department:
+
+
+
+-- Create Temporary Table
+
+CREATE TEMPORARY TABLE IT_Employees AS
+
+SELECT  EmployeeID, EmployeeName, Salary
+
+FROM Employees
+
+WHERE DepartmentID =102;
+
+
+
+-- Query the Temporary Table
+
+SELECT * FROM IT_Employees;
+
+
+
+
+
+
+
+-- 2. Creating and using a temporary table to store details of employees in the 'Marketing' department:
+
+-- Create Temporary Table
+
+CREATE TEMPORARY TABLE Marketingemployees AS 
+
+SELECT  EmployeeID, EmployeeName, Salary
+
+FROM Employees 
+
+WHERE DepartmentID=103;
+
+
+
+
+
+-- Query the Temporary Table
+
+SELECT * FROM Marketingemployees;
+
+
+
+
+
+-- The temporary table will be dropped automatically when the session ends
+
+
+
+
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
