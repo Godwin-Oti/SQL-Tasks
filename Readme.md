@@ -6,7 +6,6 @@ By working on this project, you will gain practical experience in SQL database m
 
 
 
-# Resources
 
-* SQL Documentation
-* SQL Tutorial
+
+
